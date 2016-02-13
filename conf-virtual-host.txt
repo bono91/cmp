@@ -1,0 +1,68 @@
+
+creando  virtualhost en  linux
+---------Pasos-----
+1.- lo primero que se tiene que hacer es entrar en la siguiente direccion  
+
+-----cd /etc/apache2/sites-available/
+
+2.-se copia el archivo de 000-dafault.conf  con el nombre que desea
+
+-------sudo cp 000-dafault.conf nombre_cualquiera.conf
+NOTA: es importante agregar la extension .conf y obviamente tiene que ir con el permiso sudo
+
+3.-con la ayuda de un editor de de programacion editamos el archivo copiado con 
+
+vim miarchivo.conf
+
+4.- en elarchivo copiado hacemos los siguiente 
+      <VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+
+        DocumentRoot /var/www/html/laravel_51/tienda/public /* se cambia dependiendo la ruta de la pagiina*/
+        ServerName cmpacheco.com
+        ServerAlias www.cmpacheco.com
+
+        <Directory /var/www/html/laravel_51/tienda/public>
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride All
+            Order allow,deny
+            allow from all
+         </Directory>
+
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+
+</VirtualHost>
+
+ServerName: es el nombre de nuestro dominio virtual, mediante él podremos acceder al proyecto en el navegador.
+DocumentRoot: es la ruta a la carpeta del proyecto en el servidor, en este caso, tu propio computador, como estamos usando Laravel necesitamos que ese dominio apunte a la carpeta “public” de tu proyecto.
+<Directory>: lo que está dentro de estos bloques permite activar las URLs amigables.
+
+
+----------------------
+lo que nos resta en este lado de apache es  indicarle a apache que tenemos nuevo documento con la siguiente instruccion
+
+sudo a2ensite cmpacheco.conf 
+
+
+nota: El comando a2ensite significa a2 = apache2; en = enable; site = site
+
+ ----------------------------------
+
+para activarlo  escribimos el siguiente comando  
+
+sudo vim  /etc/hosts
+
+127.0.0.1     escribimo el  nombre de nuestro pagina
+----------------------------------
+ Es muy importante que te asegures de tener habilitado el módulo rewrite de Apache (mod_rewrite), algunas plataformas lo instalan automáticamente por ti, pero sino lo puedes hacer con el siguiente comando:
+
+----sudo a2enmod rewrite
+
+----------------------------------
+ y  reiniciar los servicios de apache
+
+----sudo service apache2 restart   

@@ -1,0 +1,251 @@
+body
+{
+  
+  font-size: 10px;
+  line-height: 18px;
+  font-family: 'Italiana', serif;
+}
+h1,h2,h3,h4,h5,h6
+{
+ font-family: 'Italiana', serif;
+ 
+}
+/* nav ....*/
+.navbar-defaul
+{
+	background-color: #7e1c1e;
+    
+}
+
+.main-title
+{
+	color: orange !important;
+	font-size: 26px;
+}
+
+/* foooter .........*/
+
+footer
+{
+	background: #444;
+	text-align: center;
+	font-family: 'Italiana', serif;
+	padding: 20px 0;
+    display: block;
+    font-size: 12px;
+	color: #ccc;
+    padding: 40px;
+}
+footer p
+{
+	text-align: justify;
+}
+ul.redes li
+{
+ display: inline-block;
+
+}
+ul.redes li a
+{
+	color: orange;
+}
+.avatar
+{
+  border: 5px solid orange;
+  border-radius: 50%;
+  float: left;
+  height: 100px;
+  width: 100px;
+
+}
+/* catalgo*/
+
+#products {
+position: relative;
+max-width: 100%;
+width: 100%;
+}
+img {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+.white-panel {
+position: absolute;
+background: white;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+padding: 10px;
+}
+.white-panel h1 {
+font-size: 1em;
+}
+.white-panel h1 a {
+color: #A92733;
+}
+.white-panel:hover {
+box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+margin-top: -5px;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+
+/* detalle producto*/
+
+.product-block{
+	background: #fff;
+	border-radius: 1em;
+	padding: 1em;
+}
+/*banner modulos */
+
+#textbannersmodule .txtbanner1 .txttitle {
+    color: #0092bb;
+}
+#textbannersmodule .txtbanner1 .circle {
+    color: #ffffff;
+    background-color: #0092bb;
+}
+#textbannersmodule .txtbanner2 .txttitle {
+    color: #683378;
+}
+#textbannersmodule .txtbanner2 .circle {
+    color: #ffffff;
+    background-color: #683378;
+}
+#textbannersmodule .txtbanner3 .txttitle {
+    color: #8cc110;
+}
+#textbannersmodule .txtbanner3 .circle {
+    color: #ffffff;
+    background-color: #8cc110;
+}
+#textbannersmodule .txtbanner4 .txttitle {
+    color: #d2232a;
+}
+#textbannersmodule .txtbanner4 .circle {
+    color: #ffffff;
+    background-color: #d2232a;
+}
+
+
+#textbannersmodule.iconleft li {
+    text-align: left;
+
+}
+#textbannersmodule li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.circle {
+	display: block;
+	transition: all 0.3s ease;
+    z-index: 5;
+    position: relative;
+}
+#textbannersmodule .txtlegend {
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+}
+#textbannersmodule.iconleft .circle {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+#textbannersmodule.iconleft .circle {
+    width: 37px !important;
+    height: 37px !important;
+    margin-right: 15px !important;
+}
+#textbannersmodule li .circle {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#textbannersmodule .txttitle {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 11px !important;
+}
+#textbannersmodule li .circle {
+    margin-bottom: 0 !important;
+}
+.circle {
+    width: 85px;
+    height: 85px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 5;
+    position: relative;
+}
+.fa, [class^="fa-"] {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#textbannersmodule .txtbanner {
+    border-right: 1px solid #dddddd;
+}
+
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.textbannersmodule.iconleft a {
+    padding-top: 5px;
+    display: block;
+}
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#banner{
+	padding:10px 0;
+}
+.icon-mail-forward:before, .icon-share:before, .icon-share-alt:before {
+    content: "\f064";
+}
+/*  carrito */
+
+.table-cart
+{
+  background: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  margin-bottom: 30px;
+
+}
+
+.page
+{
+  background: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  margin-bottom: 30px;
+
+}

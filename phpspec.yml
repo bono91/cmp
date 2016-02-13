@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: cmp
+        psr4_prefix: cmp
+        src_path: app
